@@ -2,16 +2,24 @@
 <html>
 <head>
   <title><%= title %></title>
-  <!-- <%= stylesheet_link_tag    "application", :media => "all" %>-->
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= stylesheet_link_tag	"blueprint/screen", :media => "screen" %>
   <%= stylesheet_link_tag	"blueprint/print", :media => "print" %>
   
 </head>
 <body>
+	<nav>
+		<%= link_to "Papers", :controller => :papers, :action => :index %>		
+		<%= link_to "Authors", :controller => :authors, :action => :index %>		
+		<%= link_to "Publications", :controller => :publications, :action => :index %>		
+		<%= link_to "Publication Types", :controller => :publication_types, :action => :index %>		
+	</nav>
 
 <%= yield %>
+
+	<div><%= debug(params) if Rails.env.development? %></div>	 
 
 </body>
 </html>

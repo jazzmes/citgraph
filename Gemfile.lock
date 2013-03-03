@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/activescaffold/active_scaffold.git
+  revision: 9ec29591473d75fc22fbdb2e1dd532647e7951be
+  specs:
+    active_scaffold (3.3.0.rc2)
+      rails (~> 3.2.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -28,6 +35,8 @@ GEM
     activesupport (3.2.12)
       i18n (~> 0.6)
       multi_json (~> 1.0)
+    annotate (2.5.0)
+      rake
     arel (3.0.2)
     autotest-fsevent (0.2.8)
       sys-uname
@@ -129,6 +138,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  active_scaffold!
+  annotate
   autotest-fsevent
   autotest-growl
   autotest-rails-pure

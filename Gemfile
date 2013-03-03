@@ -6,6 +6,7 @@ gem 'rails', '3.2.12'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'active_scaffold', :git => 'https://github.com/activescaffold/active_scaffold.git'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -27,6 +28,7 @@ group :development, :test do
   gem 'autotest-rails-pure'
   gem 'autotest-fsevent'
   gem 'autotest-growl'
+  gem 'annotate'
 end
 
 gem 'jquery-rails'

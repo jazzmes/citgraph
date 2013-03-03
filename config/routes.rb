@@ -1,5 +1,15 @@
 Citgraph::Application.routes.draw do
   
+  resources :publications do as_routes end
+
+  resources :publication_types do as_routes end
+
+  resources :authors do as_routes end
+
+  resources :papers do 
+    as_routes 
+  end
+
   match "/home", :to => "pages#home"
   match "/about", :to => "pages#about"
 
